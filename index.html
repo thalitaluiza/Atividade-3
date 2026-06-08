@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Osteria da Nona</title>
+    <title>Casa della Nonna - Restaurante Italiano</title>
 </head>
 <body>
     <!-- O header representa o cabeçalho da página. Utilizado aqui para Inserir o titulo e o menu de navegação no topo do site. -->
     <header>
         <!-- H1 é o titulo principal e único do site-->
-        <h1>Osteria da Nona</h1>
+        <h1>Casa della Nonna</h1>
 
         <!--Nav representa um bloco de links de navegação. identifica os caminhos do site e leitores pode clicar e serem direcionados para outras páginas. Atributo ARIA-LABEL adicionado para maior acessibilidade.-->
         <nav aria-label="Navegação Principal">
             <ul>
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#nossa-historia">Nossa História</a></li>
+                <li><a href="#cardapio"></a>Cardápio</li>
                 <li><a href="#onde-estamos"></a>Onde Estamos</li>
                 <li><a href="#reservas"></a>Reservas</li>
                 <li><a href="#contato"></a>Contato</li>
@@ -30,10 +31,32 @@
         <!--A section separa blocos em uma página. É usado para agrupar conteúdos relacionados ajudando na organização. Aqui foi utilizada para uma sessão de boas-vindas-->
         <section id="bem-vindo">
             <h2>Benvenuto a Nostra Cucina!</h2>
-            
+            <p>Aqui cada receita conta uma história de família.</p>
+            <button class="Reservas" type="button" onclick="#reservas">Faça Sua Reserva</button>
+            <!--A tag <video> insere o arquivo de video dentro do código. 
+             - autoplay: inicia sozinho.
+             - loop: repete infinitamente.
+             - muted: obrigatório para o autoplay funcionar nos navegadores.
+             - playsinline: impede que celulares abram o vídeo em tela cheia nativa.
+             - poster: imagem estática exibida caso o vídeo falhe ou esteja carregando.-->
+            <video autoplay loop muted playsinline poster="Imagens/Pasta-home.jpg" src="Videos/Preparação da pasta.mp4" type="video/mp4"></video>
+
         </section>
 
     </main>
+<!--O footer define o rodapé da página. Geralmente abriga informações de direitos autorais, 
+ links secundários e dados de localização/contato da empresa.-->
+    <footer class="rodape-home">
+        <!--A tag address indica que o conteúdo  fornece informações de contato.-->
+        <address>
+            <p>Casa della Nonna S/A</p>
+            <p>Rua das Cantinas, 1952 - Bairro Italiano</p>
+            <p>Contato: <a href="mailto:contato@casadellanonna.com">contato@casadellanonna.com</a></p>
+            <p>Telefone: 31 99999-9999</p>
+        </address>
+        <!--O "&copy" é utilizado para estilizar um aviso de direitos autorais.-->
+        <p class="copyright">&copy; 2026 Casa della Nonna. Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 </html>
