@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa della Nonna - Restaurante Italiano</title>
+    <!-- A tag link com o atributo rel="stylesheet" conecta um arquivo de estilo externo (CSS) ao documento HTML.-->
+    <link rel="stylesheet" href="CSS/estilo.css">
 </head>
 <body>
     <!-- O header representa o cabeçalho da página. Utilizado aqui para Inserir o titulo e o menu de navegação no topo do site. -->
-    <header>
+    <header class="cabeçalho">
         <!-- H1 é o titulo principal e único do site-->
         <h1>Casa della Nonna</h1>
 
-        <!--Nav representa um bloco de links de navegação. identifica os caminhos do site e leitores pode clicar e serem direcionados para outras páginas. Atributo ARIA-LABEL adicionado para maior acessibilidade.-->
+        <!--Nav representa um bloco de links de navegação. identifica os caminhos do site e leitores 
+        pode clicar e serem direcionados para outras páginas. Atributo ARIA-LABEL adicionado para 
+        maior acessibilidade.-->
         <nav aria-label="Navegação Principal">
             <ul>
                 <li><a href="#inicio">Início</a></li>
@@ -29,19 +33,60 @@
     <main>
 
         <!--A section separa blocos em uma página. É usado para agrupar conteúdos relacionados ajudando na organização. Aqui foi utilizada para uma sessão de boas-vindas-->
-        <section id="bem-vindo">
-            <h2>Benvenuto a Nostra Cucina!</h2>
-            <p>Aqui cada receita conta uma história de família.</p>
-            <button class="Reservas" type="button" onclick="#reservas">Faça Sua Reserva</button>
+        <section class="hero-container">
+           <!-- Container que agrupa os elementos de texto e navegação que flutuam sobre o vídeo -->
+        <div class="hero-conteudo"> <h2>Benvenuto a Nostra Cucina!</h2>
+            <p>Aqui, cada receita conta uma história de família.</p>
+            <a href="#reservas">
+                <button type="button">Faça Sua Reserva</button>
+            </a>
+            </div>
             <!--A tag <video> insere o arquivo de video dentro do código. 
              - autoplay: inicia sozinho.
              - loop: repete infinitamente.
              - muted: obrigatório para o autoplay funcionar nos navegadores.
              - playsinline: impede que celulares abram o vídeo em tela cheia nativa.
              - poster: imagem estática exibida caso o vídeo falhe ou esteja carregando.-->
-            <video autoplay loop muted playsinline poster="Imagens/Pasta-home.jpg" src="Videos/Preparação da pasta.mp4" type="video/mp4"></video>
+            <video autoplay loop muted playsinline poster="Imagens/Pasta-home.jpg" class="video-home" src="Videos/Preparação da pasta.mp4" type="video/mp4"></video>
+           
+            <!-- Div de overlay (película escura) para garantir o contraste e a leitura do texto por cima do vídeo -->
+            <div class="hero-overlay"></div>
+        </section>
+
+        <section id="historia">
+            <h2>Una Cucina Familiare</h2>
+            <p>Há mais de três gerações, nossa família preserva receitas italianas tradicionais, preparadas com 
+            ingredientes frescos e o mesmo carinho das refeições compartilhadas à mesa da nonna.</p>
+            <p>Um ambiente familiar <i>accogliente</i>, para que você se sinta em casa.</p>
+            <a href="#nossa-historia">
+                <button type="button">Conheça</button>
+            </a>
+            <!--O figure ajuda a agrupar a imagem ao seu contexto de forma semântica.-->
+            <figure>
+                <img src="Imagens/Restaurante.jpg" alt="Faixada do restaurante">
+            </figure>
 
         </section>
+
+       <!-- A tag article representa uma composição independente na página, que poderia ser 
+        distribuída de forma independente. Usada aqui para destacar uma receita especial.-->
+        <article class="destaque-semana">
+            <h3>Destaque da Semana: Nosso <abbr title="Pappardelle Al Pomodoro">Pappardelle</abbr></h3>
+            <!-- O abbr define uma abreviação ou sigla. O atributo title exibe a versão por extenso, auxiliando na compreensão do usuário e no SEO. -->
+
+            <p>Massa fresca feita manualmente todos os dias, servida com molho de tomates rústicos e manjericão fresco muito <strong>parmesão</strong>. Uma receita <em>inesquecível</em> transmitida por gerações.</p>
+            <!-- O strong indica destaque no texto (negrito semântico), priorizado por leitores de tela. -->
+            <!-- O em enfatiza uma palavra (itálico semântico), alterando o tom de voz da leitura assistiva. -->
+            <figure>
+                <!-- A tag <img> insere o arquivo visual. O alt imperativo descreve exatamente o que 
+                 está na foto, garantindo acessibilidade para deficientes visuais e indexação de 
+                 imagens no Google. -->
+                <img src="Imagens/Pappardelle molho vermelho com mangericão.jpg" alt="Prato de massa pappardelle artesanal coberto com molho de tomate vermelho vivo, folhas de manjericão fresco e parmesão ralado.">
+                <!-- O figcaption fornece a legenda descritiva para o elemento figure, associando o 
+                 texto diretamente à imagem para fins de SEO. -->
+                <figcaption>Nosso famoso Pappardelle artesanal servido na mesa de madeira rústica.</figcaption>
+            </figure>
+        </article> 
 
     </main>
 <!--O footer define o rodapé da página. Geralmente abriga informações de direitos autorais, 
