@@ -21,7 +21,7 @@ video{
     width: 100%;
     height: 100%;
     object-fit: cover; /* Ajusta o vídeo proporcionalmente em qualquer tela */
-    z-index: 1; /*Controla a ordem das camas. 1 é a camada mais baixa*/
+    z-index: 1; /*Controla a ordem das camadas. 1 é a camada mais baixa*/
 }
 .hero-overlay{
     position: absolute;
