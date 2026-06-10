@@ -5,7 +5,7 @@ body{
 }
 /*Video*/
 .hero-container{
-    position: relative;
+    position: relative; /*Permite controlar a posição*/
     width: 100%;
     height: 70vh; /* Ocupa 70% da altura da tela do usuário */
     overflow: hidden; /* Impede que o vídeo vaze para fora do container */
@@ -21,5 +21,45 @@ video{
     width: 100%;
     height: 100%;
     object-fit: cover; /* Ajusta o vídeo proporcionalmente em qualquer tela */
-    z-index: 1; /* Camada mais baixa */
+    z-index: 1; /*Controla a ordem das camas. 1 é a camada mais baixa*/
+}
+.hero-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(92, 64, 51, 0.55); /* Marrom Madeira com 55% de opacidade */
+    z-index: 2; /* Camada do meio */
+}
+/*Texto sobre o video*/
+.hero-conteudo{
+    position: relative;
+    z-index: 3; /* Camada mais alta */
+    text-align: center;
+    color: #F8F1E7; /* Creme */
+    padding: 20px; /*Cria um espaçõ interno*/
+    max-width: 800px;/*Define uma largura máxima*/
+}
+/*Titulo sobre o video*/
+.hero-conteudo h2{
+    text-align: center;
+    font-size:3em;
+    line-height: 1.3em;
+}
+.hero-slogan{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1.6em;
+}
+/*Botão principal*/
+.hero-button{
+background-color:#7B2D26;
+border-color: #7B2D26;/*Cor da borda*/
+color: #f8f1e7;/*Cor da fonte*/
+font-size: 1.3em;
+border-width: 1px 1px 1px 1px; /*espessura da borda*/
+border-radius: 0px 0px 0px 0px;/*Arredondamento dos cantos da borda*/
+padding: 18px 40px; /*espaço entre o texto e as bordas do botão*/
 }
