@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- O header representa o cabeçalho da página. Utilizado aqui para Inserir o titulo e o menu de navegação no topo do site. -->
-    <header class="cabeçalho">
+    <header id="inicio" class="cabeçalho">
         <!-- H1 é o titulo principal e único do site-->
         <h1>Casa della Nonna</h1>
 
@@ -20,10 +20,9 @@
             <ul>
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#nossa-historia">Nossa História</a></li>
-                <li><a href="#cardapio"></a>Cardápio</li>
-                <li><a href="#onde-estamos"></a>Onde Estamos</li>
-                <li><a href="#reservas"></a>Reservas</li>
-                <li><a href="#contato"></a>Contato</li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#onde-estamos">Onde Estamos</a></li>
+                <li><a href="#reservas">Reservas</a></li>
 
             </ul>
         </nav>
@@ -55,7 +54,7 @@
             <div class="hero-overlay"></div>
         </section>
 
-        <section id="historia">
+        <section id="nossa-historia">
             <h2>Una Cucina Familiare</h2>
             <p>Há mais de três gerações, nossa família preserva receitas italianas tradicionais, preparadas com 
             ingredientes frescos e o mesmo carinho das refeições compartilhadas à mesa da nonna.</p>
@@ -120,10 +119,34 @@
                         <td>Ovo, guanciale, parmesão</td>
                         <td>R$ 95,00</td>
                     </tr>
+                    <tr>
+                        <td>Fettuccine ao Sugo com Filé Mignon</td>
+                        <td>Tomates rústicos, manjericão, parmesão</td>
+                        <td>R$ 78,00</td>
+                    </tr>
                   </tbody>
 
             </table>
 
+
+        </section>
+
+        <section id="reservas">
+            <h2>Faça Sua Reserva</h2>
+            <form action="#" method="post">
+            <!--A fieldset é usada para agrupar elementos relacionados em um formulário-->
+            <fieldset>
+                <legend>Informações de Contato</legend>
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+                <label for="data">Dia para Reserva</label>
+                <input type="date" id="data-da-reserva">
+                <label for="horário">Horário Desejado</label>
+                <input type="time" id="horario-da-reserva">
+                <button type="submit">Enviar Reserva</button>
+                <p>Ti aspettiamo!</p>
+            </fieldset>
+            </form>
 
         </section>
 
@@ -132,7 +155,7 @@
  links secundários e dados de localização/contato da empresa.-->
     <footer class="rodape-home">
         <!--A tag address indica que o conteúdo  fornece informações de contato.-->
-        <address>
+        <address id="onde-estamos">
             <p>Casa della Nonna S/A</p>
             <p>Rua das Cantinas, 1952 - Bairro Italiano</p>
             <p>Contato: <a href="mailto:contato@casadellanonna.com">contato@casadellanonna.com</a></p>
