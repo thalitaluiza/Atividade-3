@@ -88,6 +88,15 @@
                 <figcaption>Nosso famoso Pappardelle artesanal servido na mesa de madeira rústica.</figcaption>
             </figure>
         </article> 
+        <!-- O aside define um conteúdo secundário ao conteúdo principal. Usado aqui para uma curiosidade lateral sobre os 
+         ingredientes, sem quebrar o fluxo da história principal. -->
+         <!--aria-describedby é um atributo de acessibilidade do HTML. Ele serve para associar um elemento a um texto explicativo-->
+            <aside class="curiosidade-tomate" aria-describedby="info-tomate">
+                <h3 id="info-tomate">Curiosidade da Nonna</h3>
+                <!--O mark destaca um trecho de texto, como se você tivesse passado um marca-texto amarelo nele.-->
+                <p> Todos os nossos tomates são importados diretamente da região de <mark>San Marzano, na Itália,</mark> garantindo a acidez perfeita para o molho 
+                    rústico.</p>
+            </aside>
         <section id="cardapio">
             <h2>Nosso Cardápio</h2>
             <!--A tag table organiza os dados em linhas e colunas-->
@@ -128,6 +137,12 @@
 
             </table>
 
+            <!-- details cria uma área expansível/retrátil-->
+            <details>
+                <!-- O summary é o título clicável para abrir ou fechar o elemento details. -->
+                <summary>Clique aqui para ver os horários de funcionamento</summary>
+                <p>Terça a Sábado: 12h às 23h<br>Domingos: 12h às 17h</p>
+            </details>
 
         </section>
 
@@ -147,6 +162,15 @@
                 <p>Ti aspettiamo!</p>
             </fieldset>
             </form>
+            <!-- O button ativa um processo interativo. Este botão demonstra visualmente a abertura do elemento dialog abaixo através de uma
+             ação do usuário. -->
+            <button type="button" onclick="document.getElementById('politica-cancelamento').showModal()">Ver Políticas de Cancelamento</button>
+
+            <dialog id="politica-cancelamento">
+                <h3>Políticas de Cancelamento</h3>
+                <p>Pedimos a gentileza de cancelar ou reagendar sua reserva com pelo menos 2 horas de antecedência pelo nosso telefone comercial 31 99999-9999.</p>
+                <!-- Botão interno para fechar a janela-->
+                <button type="button" onclick="document.getElementById('politica-cancelamento').close()">Fechar Janela</button>
 
         </section>
 
