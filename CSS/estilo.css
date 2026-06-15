@@ -63,3 +63,34 @@ border-width: 1px 1px 1px 1px; /*espessura da borda*/
 border-radius: 0px 0px 0px 0px;/*Arredondamento dos cantos da borda*/
 padding: 18px 40px; /*espaço entre o texto e as bordas do botão*/
 }
+/*Cabeçalho*/
+header{
+    background-color: #f9efe1;
+    box-shadow: 0 2px 4px #556B2F;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between; /* coloca o menu a direita*/
+    align-items: center; /* alinha o conteúdo*/
+}
+/* Menu de Navegação dentro do Hero */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    color: #556B2F;
+    text-decoration: none; /*tira o azul do link*/
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover{
+    color: #7B2D26; /*Transição para o Bordô */
+    text-decoration: underline; /*linha ao passar o mouse*/
+}
