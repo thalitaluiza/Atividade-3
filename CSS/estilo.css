@@ -69,6 +69,7 @@ border-width: 1px 1px 1px 1px; /*espessura da borda*/
 border-radius: 0px 0px 0px 0px;/*Arredondamento dos cantos da borda*/
 padding: 18px 40px; /*espaço entre o texto e as bordas do botão*/
 cursor: pointer; /*muda o cursor so mouse ao passar pelo botão*/
+font-weight: normal;
 }
 
 /*Transição no botão de reserva*/
@@ -179,4 +180,94 @@ figcaption{
 .curiosidade-tomate h3 {
     color: #F8F1E7;
     margin-top: 0;
+}
+/*Tabela - Cardápio*/
+table{
+    width: 100%;
+    border-collapse: collapse; /*define se as células dentro de um elemento têm bordas compartilhadas ou separadas*/
+    margin: 25px 0;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 15px; /*Espaço abaixo do titulo da tabela*/
+    color: #7B2D26;
+    text-align: left;
+}
+th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #E5DCD0; /*Linhas na tabela*/
+}
+th {
+    background-color: #5C4033; /*Cabeçalho da tabela marrom */
+    color: #F8F1E7;
+    font-weight: 600;
+}
+tr:hover {
+    background-color: #F8F1E7; /*Efeito visual nas linhas ao passar o mouse*/
+}
+/*Horários de Funcionamento*/
+details{
+    background-color: #F8F1E7;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 20px 0;
+    border: 1px solid #E5DCD0;
+}
+summary{
+    cursor: pointer;
+    font-weight: bold;
+    color: #7B2D26;
+}
+/*Formulário*/
+fieldset {
+    border: 2px solid #5C4033; /*borda ao redor do formulário*/
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #7B2D26;
+    padding: 0 10px;
+    font-size: 1.1rem;
+}
+
+label {
+    display: block; /*usado para fazer com que os elementos ocupem uma linha inteira*/
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    display: block;/* faz o campo de inserir informações ocupar a linha inteira*/
+    width: 100%; /*ocupa todo espaço disponivel da seção*/
+    box-sizing: border-box; /*tudo fca dentro do layout*/
+    margin-bottom: 20px; /*espaço abaixo*/
+    padding: 12px; /*espaço interno*/
+    border: 1px solid #5C4033;
+    border-radius: 4px; /*arredonda a borda*/
+    background-color: #F8F1E7;
+    color: #5C4033;
+}
+
+button{
+    display: inline-block;
+    background-color: #7B2D26;
+    color: #F8F1E7;
+    border: none;
+    font-weight: bold;
+    font-size: 0.98rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #556B2F; /* Muda para Verde*/
 }
