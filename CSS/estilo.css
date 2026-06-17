@@ -3,6 +3,7 @@ body{
     background-color: #f8f1e7;
     color: #5C4033;
 }
+
 /*Video*/
 .hero-container{
     position: relative; /*Permite controlar a posição*/
@@ -13,6 +14,7 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 /*Ajuste de tamanho do vídeo*/
 video{
     position: absolute;
@@ -32,6 +34,7 @@ video{
     background: rgba(92, 64, 51, 0.55); /* Marrom Madeira com 55% de opacidade */
     z-index: 2; /* Camada do meio */
 }
+
 /*Texto sobre o video*/
 .hero-conteudo{
     position: relative;
@@ -41,8 +44,10 @@ video{
     padding: 20px; /*Cria um espaçõ interno*/
     max-width: 800px;/*Define uma largura máxima*/
 }
+
 /*Titulo sobre o video*/
 .hero-conteudo h2{
+    color: #f8f1e7;
     text-align: center;
     font-size:3em;
     line-height: 1.3em;
@@ -53,16 +58,26 @@ video{
     font-weight: 500;
     line-height: 1.6em;
 }
+
 /*Botão principal*/
 .hero-button{
-background-color:#7B2D26;
-border-color: #7B2D26;/*Cor da borda*/
+background-color:#556B2F;
+border-color: #556B2F;/*Cor da borda*/
 color: #f8f1e7;/*Cor da fonte*/
 font-size: 1.3em;
 border-width: 1px 1px 1px 1px; /*espessura da borda*/
 border-radius: 0px 0px 0px 0px;/*Arredondamento dos cantos da borda*/
 padding: 18px 40px; /*espaço entre o texto e as bordas do botão*/
+cursor: pointer; /*muda o cursor so mouse ao passar pelo botão*/
 }
+
+/*Transição no botão de reserva*/
+.hero-button:hover {
+background-color:#b84025;
+border-color: #b84025;
+transition: background-color 3s ease;
+}
+
 /*Cabeçalho*/
 header{
     background-color: #f9efe1;
@@ -72,6 +87,7 @@ header{
     justify-content: space-between; /* coloca o menu a direita*/
     align-items: center; /* alinha o conteúdo*/
 }
+
 /* Menu de Navegação dentro do Hero */
 nav ul {
     list-style: none;
@@ -81,7 +97,6 @@ nav ul {
     justify-content: center;
     gap: 25px;
 }
-
 nav a {
     color: #556B2F;
     text-decoration: none; /*tira o azul do link*/
@@ -89,8 +104,79 @@ nav a {
     font-size: 1.1rem;
     transition: color 0.3s ease;
 }
-
 nav a:hover{
     color: #7B2D26; /*Transição para o Bordô */
     text-decoration: underline; /*linha ao passar o mouse*/
+}
+
+/*Personalização do Conteúdo*/
+section{
+    background-color: #ffffff;
+    margin-bottom: 40px;
+    padding: 30px;
+    border-radius: 8px; /*arredonda a borda*/
+    border-left: 6px solid #556B2F; /* Verde Oliva como destaque lateral */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);/*sombra leve*/
+}
+h2{
+    color: #7B2D26; /*bordô*/
+    font-size: 1.8rem;
+    margin-top: 0;
+    border-bottom: 2px solid #F8F1E7;/*linha abaixo do titulo da seção*/
+}
+
+/*Nossa História*/
+.historia-conteudo{
+    display: flex; /*colocas os elementos lado a lado*/
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px; /*Cria um espaço entre o texto e a foto*/
+}
+.historia-texto{
+    flex: 1;/*Faz texto e imagem ocuparem espaços proporcionais*/
+}
+/*Titulo mais acima do texto*/
+#nossa-historia h2{
+    position: relative;
+    top: -290px;
+}
+.historia-conteudo figure{
+    flex: 1;
+    margin: 0;
+}
+.historia-conteudo img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/*Imagens e Legendas*/
+figure{
+    margin: 20px 0;
+    text-align: center; /*alinha imagem e legenda ao centro do site*/
+}
+img{
+    height:auto;
+     max-width: 100%;
+     object-fit: cover
+}
+figcaption{
+    color: #556B2F;
+    font-size: 0.985rem;
+}
+
+/* Curiosidades (Aside)*/
+.curiosidade-tomate {
+    background-color: #556B2F; /* Verde Oliva */
+    color: #F8F1E7;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 6px;
+    margin-bottom: 25px /*espaço apos a curiosidade*/
+}
+
+.curiosidade-tomate h3 {
+    color: #F8F1E7;
+    margin-top: 0;
 }
