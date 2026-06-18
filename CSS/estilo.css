@@ -75,7 +75,7 @@ cursor: pointer; /*muda o cursor so mouse ao passar pelo botão*/
 .hero-button:hover {
 background-color:#b84025;
 border-color: #ffffff;
-order-width: 3px 3px 3px 3px; /*espessura da borda*/
+border-width: 3px 3px 3px 3px; /*espessura da borda*/
 transition: background-color 3s ease;
 }
 
