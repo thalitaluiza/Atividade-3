@@ -62,20 +62,20 @@ video{
 /*Botão principal*/
 .hero-button{
 background-color:#556B2F;
-border-color: #556B2F;/*Cor da borda*/
+border-color: #ffffff;/*Cor da borda*/
 color: #f8f1e7;/*Cor da fonte*/
 font-size: 1.3em;
 border-width: 1px 1px 1px 1px; /*espessura da borda*/
 border-radius: 0px 0px 0px 0px;/*Arredondamento dos cantos da borda*/
 padding: 18px 40px; /*espaço entre o texto e as bordas do botão*/
 cursor: pointer; /*muda o cursor so mouse ao passar pelo botão*/
-font-weight: normal;
 }
 
 /*Transição no botão de reserva*/
 .hero-button:hover {
 background-color:#b84025;
-border-color: #b84025;
+border-color: #ffffff;
+order-width: 3px 3px 3px 3px; /*espessura da borda*/
 transition: background-color 3s ease;
 }
 
@@ -136,10 +136,25 @@ h2{
 .historia-texto{
     flex: 1;/*Faz texto e imagem ocuparem espaços proporcionais*/
 }
+.paragrafo-principal{
+    font-size: 1.2rem;
+}
+.paragrafo-secundario{
+    font-size: 1.2rem;
+}
+
+/*Destaque da Semana*/
+.destaque-semana {
+    padding: 20px;
+    border-radius: 6px; /*arredonda as bordas*/
+    margin-top: 20px; /*Cria espaço acima da "caixa"*/
+    border: 1px dashed #5C4033; /*borda fina, pontilhada e marrom*/
+}
+
 /*Titulo mais acima do texto*/
 #nossa-historia h2{
     position: relative;
-    top: -290px;
+    top: -260px; /*subi o titulo da seção*/
 }
 .historia-conteudo figure{
     flex: 1;
@@ -181,6 +196,13 @@ figcaption{
     color: #F8F1E7;
     margin-top: 0;
 }
+mark {
+    background-color: #7B2D26; /*muda a cor do marcador*/
+    color: #F8F1E7; /*cor do texto*/
+    padding: 2px 6px; /*espaço dento do marcador*/
+    border-radius: 3px; /*bordas levimente arredondadas*/
+}
+
 /*Tabela - Cardápio*/
 table{
     width: 100%;
@@ -254,7 +276,7 @@ input {
     color: #5C4033;
 }
 
-button{
+.botao-comum{
     display: inline-block;
     background-color: #7B2D26;
     color: #F8F1E7;
@@ -268,6 +290,40 @@ button{
     margin-top: 5px;
 }
 
-button:hover {
+
+.botao-comum:hover {
     background-color: #556B2F; /* Muda para Verde*/
+}
+
+/*Rodapé*/
+.rodape-home {
+    background-color: #5C4033; /* Marrom Madeira */
+    color: #F8F1E7;
+    padding: 40px 20px; /*espaço interno*/
+    margin-top: 60px; /*cria um espaço antes do rodapé*/
+    text-align: center;
+}
+
+address {
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+address p {
+    margin: 5px 0; /*diminui o espaço entre o endereço, contato e telefone*/
+}
+
+.rodape-home a {
+    color: #F8F1E7; /*coloca o hiperlink na cor creme*/
+    text-decoration: underline; /*coloca uma linha abaixo do link*/
+}
+
+.rodape-home a:hover {
+    color:#6d8445; /*muda o texto para verde*/
+}
+
+.copyright {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin: 0;
 }

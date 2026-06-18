@@ -58,11 +58,12 @@
             <div class="historia-conteudo">
                 <div class="historia-texto">
             <h2>Una Cucina Familiare</h2>
-            <p>Há mais de três gerações, nossa família preserva receitas italianas tradicionais, preparadas com 
-            ingredientes frescos e o mesmo carinho das refeições compartilhadas à mesa da nonna.</p>
-            <p>Um ambiente familiar <i>accogliente</i>, para que você se sinta em casa.</p>
+            <p class="paragrafo-principal">Fundada em <time datetime="1952-10-12">12 de outubro de 1952</time>, nossa família preserva receitas italianas tradicionais 
+                há mais de três gerações. Cada prato é preparadas com ingredientes frescos e o mesmo carinho das refeições 
+                compartilhadas à mesa da nonna.</p>
+            <p class="paragrafo-secundario">Um ambiente familiar <i>accogliente</i>, para que você se sinta em casa.</p>
             <a href="#onde-estamos">
-                <button type="button">Conheça</button>
+                <button class="botao-comum" type="button">Conheça</button>
             </a>
             </div>
             <!--O figure ajuda a agrupar a imagem ao seu contexto de forma semântica.-->
@@ -137,7 +138,16 @@
                         <td>Tomates rústicos, manjericão, parmesão</td>
                         <td>R$ 78,00</td>
                     </tr>
+                    
                   </tbody>
+
+                  <tfoot>
+
+                     <tr>
+                         <td colspan="3">Consulte as opções de massas sem glúten disponíveis mediante solicitação ao garçom.</td>
+                     </tr>
+
+                    </tfoot>
 
             </table>
 
@@ -162,20 +172,20 @@
                 <input type="date" id="data-da-reserva">
                 <label for="horário">Horário Desejado</label>
                 <input type="time" id="horario-da-reserva">
-                <button type="submit">Enviar Reserva</button>
+                <button class="botao-comum" type="submit">Enviar Reserva</button>
                 <p>Ti aspettiamo!</p>
             </fieldset>
             </form>
             <!-- O button ativa um processo interativo. Este botão demonstra visualmente a abertura do elemento dialog abaixo através de uma
              ação do usuário. -->
-            <button type="button" onclick="document.getElementById('politica-cancelamento').showModal()">Ver Políticas de Cancelamento</button>
+            <button class="botao-comum" type="button" onclick="document.getElementById('politica-cancelamento').showModal()">Ver Políticas de Cancelamento</button>
 
             <dialog id="politica-cancelamento">
                 <h3>Políticas de Cancelamento</h3>
                 <p>Pedimos a gentileza de cancelar ou reagendar sua reserva com pelo menos 2 horas de antecedência pelo nosso telefone comercial 31 99999-9999.</p>
                 <!-- Botão interno para fechar a janela-->
-                <button type="button" onclick="document.getElementById('politica-cancelamento').close()">Fechar Janela</button>
-
+                <button class="botao-comum" type="button" onclick="document.getElementById('politica-cancelamento').close()">Fechar Janela</button>
+            </dialog>
         </section>
 
     </main>
